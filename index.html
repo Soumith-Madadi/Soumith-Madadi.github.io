@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>Soumith Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/main.css">
+<body>
+
+  <div id="modal-background" class="transition background"></div>
+  <div id="main-circle"></div>
+  <div id="top-bar" class="w3-container transition">
+    <h1 id="top-bar-name">Soumith</h1>
+    <h1 id="top-bar-desc">Portfolio</h1>
+  </div>
+  <div id="boxes">
+    
+  </div>
+  <div id="modal">
+    <h2></h2>
+    <div id="modal-title-border"></div>
+    <div id="modal-image-holder">
+      <div id="modal-image-changer" class="w3-center">
+        <div class="w3-left w3-btn image-arrow" onclick="shiftModalImage(-1)">❮</div>
+        <div class="w3-right w3-btn image-arrow" onclick="shiftModalImage(1)">❯</div>
+      </div>
+    </div>
+    <h3></h3>
+    <p></p>
+    <span id="main-close" onclick="closeModal()" class="modal-close">×</span>
+  </div>
+
+  <div id="large-image-background" class="transition background">
+  </div>
+  <img id="large-image" class="transition"></img>
+  <span id="large-image-close" onclick="shrinkImage()" style="top: 10px; left: 10px;" class="modal-close">×</span>
+</body>
+<script src="scripts/jquery-3.6.0.js"></script>
+<script src="scripts/main.js"></script>
+
+</html>
